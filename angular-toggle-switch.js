@@ -9,7 +9,7 @@ angular.module('toggle-switch', ['ng']).directive('toggleSwitch', function () {
       offLabel: '@',
       knobLabel: '@'
     },
-    template: '<div class="switch" ng-click="toggle()" ng-class="{ \'disabled\': disabled }"><div class="switch-animate" ng-class="{\'switch-off\': !model, \'switch-on\': model}"><span class="switch-left" ng-bind="onLabel"></span><span class="knob" ng-bind="knobLabel"></span><span class="switch-right" ng-bind="offLabel"></span></div></div>',
+    template: '<div class="ag-switch" ng-click="toggle()" ng-class="{ \'ag-disabled\': disabled }"><div class="ag-switch-animate" ng-class="{\'ag-switch-off\': !model, \'ag-switch-on\': model}"><span class="ag-switch-left" ng-bind="onLabel"></span><span class="ag-knob" ng-bind="knobLabel"></span><span class="ag-switch-right" ng-bind="offLabel"></span></div></div>',
     controller: function($scope) {
       $scope.toggle = function toggle() {
         if(!$scope.disabled) {
