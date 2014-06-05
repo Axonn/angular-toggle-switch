@@ -8,7 +8,7 @@
     min-width: 100px;
 }
 
-.ag-switch.ag-disabled > div > span.knob {
+.ag-switch.ag-disabled > div > span.ag-knob {
     background: #AAA;
 }
 
